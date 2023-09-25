@@ -9,16 +9,24 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <script src="js/validate.js" defer></script>
   <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <form>
-    <h1>formulario para email:</h1>
+    <h1>email form:</h1>
     <div>
-      <label for="sender">Sender:</label><input id="sender" type="email" value="poor-student@isdicoders.com">
+      <label for="sender">Sender:</label><input required id="sender" type="email" value="poor-student@isdicoders.com">
     </div>
     <div>
-      <label for="recipient">To:</label><input id="recipient" type="email" placeholder="Ex.:student@isdicoders.com">
+      <label for="recipient">To:</label><input required id="recipient" type="email"
+        placeholder="Ex.:student@isdicoders.com">
+    </div>
+    <div>
+      <label for="issue">Issue::</label><input required type="text" name="issue" id="issue">
+    </div>
+    <div>
+      <label for="body-message">Message:</label><input required type="text" name="body-message" id="body-message">
     </div>
 
   </form>
